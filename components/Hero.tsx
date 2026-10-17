@@ -34,24 +34,6 @@ export default function Hero() {
             advanced software engineering and data intelligence.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap">
-            <a
-              href="#work"
-              className="inline-flex items-center justify-center rounded-full bg-violet-600 px-7 py-3.5 font-medium text-white! transition duration-300 hover:-translate-y-1 hover:bg-violet-500 hover:shadow-lg hover:shadow-violet-600/20"
-            >
-              View My Work
-            </a>
-
-            <a
-              href="https://github.com/vivek-namdev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-zinc-700 px-7 py-3.5 font-medium text-zinc-200 transition duration-300 hover:-translate-y-1 hover:border-zinc-500 hover:bg-zinc-900"
-            >
-              GitHub ↗
-            </a>
-          </div>
-
           <div className="mt-7 flex items-center gap-2 text-sm text-zinc-500 sm:mt-8">
             <span className="h-2 w-2 rounded-full bg-green-500" />
             Open to project-based roles and strategic data partnerships.

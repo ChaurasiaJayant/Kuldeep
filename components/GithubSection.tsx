@@ -138,15 +138,6 @@ export default function GithubSection() {
                 Some of the work behind the portfolio.
               </h3>
             </div>
-
-            {/* <a
-              href="https://github.com/vivek-namdev?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden text-sm text-zinc-500 transition hover:text-white sm:block"
-            >
-              View all repositories ↗
-            </a> */}
           </div>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
