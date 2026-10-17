@@ -1,0 +1,190 @@
+
+@import "tailwindcss";
+
+/*
+  Tailwind v4:
+  Make dark: classes respond to the .dark class
+  instead of the user's operating-system preference.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #18181b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --card: #ffffff;
+  --accent: #7c3aed;
+}
+
+.dark {
+  --background: #080808;
+  --foreground: #ededed;
+  --muted: #a1a1aa;
+  --border: #27272a;
+  --card: #111111;
+  --accent: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(124, 58, 237, 0.045),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(124, 58, 237, 0.03),
+      transparent 25%
+    );
+
+  background-attachment: fixed;
+}
+
+.dark body {
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(124, 58, 237, 0.06),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(124, 58, 237, 0.04),
+      transparent 25%
+    );
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+html:not(.dark) .bg-\[\#080808\] {
+  background-color: #f8fafc !important;
+}
+
+html:not(.dark) .bg-\[\#0d0d0d\] {
+  background-color: #ffffff !important;
+}
+
+html:not(.dark) .bg-zinc-950 {
+  background-color: #f4f4f5 !important;
+}
+
+html:not(.dark) .bg-zinc-900 {
+  background-color: #f4f4f5 !important;
+}
+
+html:not(.dark) .text-white {
+  color: #18181b !important;
+}
+
+html:not(.dark) .text-zinc-300 {
+  color: #3f3f46 !important;
+}
+
+html:not(.dark) .text-zinc-400 {
+  color: #52525b !important;
+}
+
+html:not(.dark) .text-zinc-500 {
+  color: #71717a !important;
+}
+
+html:not(.dark) .text-zinc-600 {
+  color: #71717a !important;
+}
+
+html:not(.dark) .text-zinc-700 {
+  color: #52525b !important;
+}
+
+html:not(.dark) .border-zinc-800 {
+  border-color: #e4e4e7 !important;
+}
+
+html:not(.dark) .border-zinc-700 {
+  border-color: #d4d4d8 !important;
+}
+
+html:not(.dark) .border-zinc-900 {
+  border-color: #e4e4e7 !important;
+}
+
+html:not(.dark) .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.1) !important;
+}
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+.dark .bg-\[\#080808\] {
+  background-color: #080808 !important;
+}
+
+.dark .bg-\[\#0d0d0d\] {
+  background-color: #0d0d0d !important;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
