@@ -79,12 +79,14 @@ export default function Skills() {
           <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
             The tools I use
             <br />
-            <span className="text-zinc-500">to build.</span>
+            <span className="text-zinc-500">to uncover insights.</span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-zinc-400">
-            My primary focus is full-stack web development with modern frontend,
-            backend and database technologies.
+            From data cleaning and analysis to interactive dashboards and
+            visualization, I use tools like SQL, Python, Excel, and Power BI to
+            transform raw data into meaningful insights and support data-driven
+            decision-making.
           </p>
         </div>
 

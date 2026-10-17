@@ -80,11 +80,6 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-24 border-t border-zinc-900 pt-8">
-          <div className="flex flex-col justify-between gap-4 text-sm text-zinc-600 sm:flex-row">
-            <p>Designed &amp; built by Kuldeep Yadav 👦</p>
-          </div>
-        </div>
       </div>
     </section>
   );
